@@ -16,6 +16,10 @@ public class Car {
 		this.color = color;
 		this.type = type;
 		this.constructionYear = constructionYear;
+                if(price < 1)
+                {
+                    throw new IllegalArgumentException();
+                }
 		this.price = price;
 	}
 
